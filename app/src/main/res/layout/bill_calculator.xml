@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/textAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textColor="#100F0F" />
+    <EditText
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editInputAmount" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Num of Pax" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ToggleButton
+            android:id="@+id/tbSvs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="No SVS"
+            android:textOn="NoSVS" />
+
+        <ToggleButton
+            android:id="@+id/tbGst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="GST"
+            android:textOn="GST" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Discount(%)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textNumPax" />
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editInputNumPax" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:text="Cash" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:text="PayNow" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/SplitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Split"
+            android:textOff="Split"
+            android:textOn="Split" />
+
+        <ToggleButton
+            android:id="@+id/ResetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Reset"
+            android:textOff="Reset"
+            android:textOn="Reset" />
+    </LinearLayout>
